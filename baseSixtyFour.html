@@ -1,0 +1,10 @@
+<div>        
+    <img id="myImage" alt="Red dot" />
+  </div>
+
+<script>        
+    const imgBase64 = new URLSearchParams(window.location.search).get('p');
+
+    document.getElementById('myImage').src=`data:image/png;base64, ${imgBase64}`
+
+</script>
